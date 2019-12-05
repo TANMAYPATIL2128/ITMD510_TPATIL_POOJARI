@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="160.0" layoutY="132.0" promptText="Enter movie name">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField layoutX="159.0" layoutY="205.0" promptText="Enter Price">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Button layoutX="209.0" layoutY="282.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="49.0" text="ADD" />
+      <Label contentDisplay="CENTER" layoutX="166.0" layoutY="51.0" text="ADD MOVIES" textFill="#bf2828">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="404.0" prefHeight="17.0" prefWidth="56.0" text="Status" textFill="#c91212">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

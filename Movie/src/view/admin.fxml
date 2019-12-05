@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField alignment="CENTER" layoutX="161.0" layoutY="142.0" text="ADD MOVIES">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" layoutX="161.0" layoutY="236.0" text="MODIFY MOVIES LIST">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" layoutX="161.0" layoutY="322.0" text="DELETE MOVIES">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Label contentDisplay="CENTER" layoutX="208.0" layoutY="37.0" text="ADMIN" textFill="#bf2828">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="161.0" layoutY="411.0" text="LOG OUT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
