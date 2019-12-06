@@ -12,17 +12,17 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="211.0" layoutY="151.0" mnemonicParsing="false" text="BOOKING">
+      <Button fx:id="booking" layoutX="211.0" layoutY="151.0" mnemonicParsing="false" onAction="#bookingMovie" text="BOOKING">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="215.0" layoutY="238.0" mnemonicParsing="false" text="REFUND">
+      <Button fx:id="movielist" layoutX="204.0" layoutY="241.0" mnemonicParsing="false" onAction="#movieList" text="MOVIE LIST">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="212.0" layoutY="324.0" mnemonicParsing="false" text="LOG OUT">
+      <Button fx:id="logout" layoutX="212.0" layoutY="324.0" mnemonicParsing="false" onAction="#logout" text="LOG OUT">
          <font>
             <Font size="14.0" />
          </font>

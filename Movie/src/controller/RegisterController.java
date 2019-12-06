@@ -1,5 +1,6 @@
 package controller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,12 +10,16 @@ import java.util.ResourceBundle;
 import dao.DBConnect;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 //import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 public class RegisterController implements Initializable{
 	
@@ -35,7 +40,8 @@ public class RegisterController implements Initializable{
 	private Button Register;
 	@FXML
 	private Label lblStatus1;
-	
+	@FXML
+	private Button back;
 	
 	public void handleRegister(ActionEvent register) throws SQLException
 	{
@@ -81,6 +87,14 @@ public class RegisterController implements Initializable{
 		conn = DBConnect.connect();
 		
 	}
+
+	public void back(ActionEvent event) throws IOException {
+		Stage primaryStage = new Stage();
+		Parent root = FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
+		Scene scene = new Scene(root);
+		//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		primaryStage.setScene(scene);
+		primaryStage.show();}
 	
 
 }

@@ -10,20 +10,39 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
-      <Label layoutX="220.0" layoutY="43.0" text="Login" textFill="#c30d0d">
+      <Label layoutX="218.0" layoutY="70.0" text="Login" textFill="#c30d0d">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="txtUsername" alignment="CENTER" layoutX="176.0" layoutY="100.0" promptText="Username" />
-      <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="176.0" layoutY="157.0" promptText="Password" />
-      <Button layoutX="211.0" layoutY="209.0" mnemonicParsing="false" onAction="#Login" prefHeight="35.0" prefWidth="74.0" text="Login" />
-      <Button fx:id="btnRegister" layoutX="211.0" layoutY="269.0" mnemonicParsing="false" onAction="#Register" prefHeight="35.0" prefWidth="74.0" text="Register" />
-      <Label fx:id="lblStatus" layoutX="92.0" layoutY="359.0" prefHeight="35.0" prefWidth="138.0" text="Status" textFill="#c91515">
+      <TextField fx:id="txtUsername" alignment="CENTER" layoutX="176.0" layoutY="120.0" promptText="Username" />
+      <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="176.0" layoutY="173.0" promptText="Password" />
+      <Button layoutX="205.0" layoutY="233.0" mnemonicParsing="false" onAction="#Login" prefHeight="35.0" prefWidth="74.0" text="Login">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnRegister" layoutX="205.0" layoutY="367.0" mnemonicParsing="false" onAction="#Register" prefHeight="35.0" prefWidth="74.0" text="Register">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label fx:id="lblStatus" layoutX="56.0" layoutY="434.0" prefHeight="35.0" prefWidth="138.0" text="Status" textFill="#c91515">
          <font>
             <Font size="19.0" />
          </font>
       </Label>
-      <Text layoutX="109.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEW USER ??" wrappingWidth="91.41015625" />
+      <Text layoutX="102.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEW USER ??" wrappingWidth="91.41015625">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Label layoutX="28.0" layoutY="30.0" prefHeight="35.0" prefWidth="446.0" text="MOVIE TICKET RESERVATION SYSTEM" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="adminlogin" layoutX="193.0" layoutY="296.0" mnemonicParsing="false" onAction="#adminlogin" text="Admin Login">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

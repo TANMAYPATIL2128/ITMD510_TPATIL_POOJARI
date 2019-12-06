@@ -30,10 +30,15 @@
          <font>
             <Font size="13.0" />
          </font></TextField>
-      <Button fx:id="Register" layoutX="220.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleRegister" text="Register">
+      <Button fx:id="Register" layoutX="220.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleRegister" text="REGISTER">
          <font>
-            <Font size="13.0" />
+            <Font name="System Bold" size="13.0" />
          </font></Button>
+      <Button fx:id="back" layoutX="385.0" layoutY="390.0" mnemonicParsing="false" onAction="#back" text="BACK">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
       <Label fx:id="lblStatus1" layoutX="110.0" layoutY="370.0" prefHeight="17.0" prefWidth="162.0" text="Status" textFill="#c60c0c">
          <font>
             <Font size="14.0" />

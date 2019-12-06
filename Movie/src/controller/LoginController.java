@@ -34,6 +34,8 @@ public class LoginController implements Initializable {
 	
 	@FXML
 	private Button btnRegister;
+	@FXML
+	private Button adminlogin;
 
 	// Event Listener on Button.onAction
 	@FXML
@@ -93,7 +95,21 @@ public class LoginController implements Initializable {
 		{
 			lblStatus.setText("Not Connected");
 		}
-}
-			
+	}
+
+	public void adminlogin(ActionEvent event) throws IOException {
+		if(event.getSource()==adminlogin)
+		{
+			if((txtUsername.getText().equals("admin") && txtPassword.getText().equals("admin")))
+		
+		{
+		Stage primaryStage = new Stage();
+		Parent root = FXMLLoader.load(getClass().getResource("/view/admin.fxml"));
+		Scene scene = new Scene(root);
+		//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		primaryStage.setScene(scene);
+		primaryStage.show();}
 		
 	}
+}
+}
